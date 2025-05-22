@@ -58,14 +58,14 @@ else
     echo "python is installed"
 fi
 
-dnf list installed nginix &>>$LOG_FILE
+dnf list installed nginx &>>$LOG_FILE
 
 if [ $? -ne 0 ]
 then 
-     echo "nginix is not installed"  | tee -a $LOG_FILE
-     dnf install nginix -y
+     echo "nginx is not installed"  | tee -a $LOG_FILE
+     dnf install nginx -y
      VALIDATE "$1" "nginx"
 else 
-    echo "nginix is installed"
+    echo "nginx is installed"
 fi
 
