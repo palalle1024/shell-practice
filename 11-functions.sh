@@ -10,7 +10,7 @@ else
 fi
 
 VALIDATE (){
-    if [ "$1" -eq 0 ]
+    if [ $1 -eq 0 ]
     then 
         echo "the $2 is sucessfull"
     else
