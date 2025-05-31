@@ -4,7 +4,7 @@
 DISK_USAGE=$(df -hT | grep -v Filesystem) 
 DISK_THRESHOLD=1 # in a project it will be 75
 MSG=""
-IP=$(curl http://169.254.169.254/latest/meta-data/local-ipv4)
+#IP=$(curl http://169.254.169.254/latest/meta-data/local-ipv4)
 
 while IFS= read line 
 do
