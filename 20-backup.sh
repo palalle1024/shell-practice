@@ -65,6 +65,7 @@ then
 fi 
 
 
+
 FILES=$(find $SOURCE_DIR -name ".log" -mtime $DAYS)
 
 if [ ! -z "$FILES" ]
@@ -87,6 +88,6 @@ then
     else 
         echo -e "Zip file creation ... $R FAILURE $N"
         exit 1
-else 
+else
     echo -e "No log files found older than 14 days ... $Y SKIPPING $N"
-fi 
+fi
