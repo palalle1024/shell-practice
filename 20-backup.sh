@@ -67,6 +67,7 @@ fi
 
 
 FILES=$(find $SOURCE_DIR -name ".log" -mtime +$DAYS)
+echo "$FILES"
 
 if [ ! -z "$FILES" ]
 then 
