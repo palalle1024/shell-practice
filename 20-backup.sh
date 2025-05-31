@@ -88,6 +88,7 @@ then
     else 
         echo -e "Zip file creation ... $R FAILURE $N"
         exit 1
+    fi
 else
     echo -e "No log files found older than 14 days ... $Y SKIPPING $N"
 fi
